@@ -17,6 +17,10 @@
         Metotlar instance = new Metotlar();
         instance.topla(4,5,out int toplamSonucu);
         Console.WriteLine(toplamSonucu);
+
+        //Method Overloading
+        int ifade =999;
+        instance.ekranaYazdir(Convert.ToString(ifade)); 
     }
 }
 
@@ -25,5 +29,10 @@ class Metotlar
      public void topla(int a, int b, out int toplam)
      {
         toplam=a+b;
+     }
+
+     public void ekranaYazdir(string veri)
+     {
+        Console.WriteLine(veri);
      }
 }
